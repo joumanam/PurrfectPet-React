@@ -37,8 +37,7 @@ body {
 }
 
 .prof-block1 {
-  margin-left: auto;
-  margin-right: 35px;
+  margin-left: 25px;
   padding: 13px;
   max-width: 420px;
   background: hsl(0, 0%, 96%, 0.2);
@@ -47,10 +46,10 @@ body {
 
 .prof-block2 {
   margin-top: 10px;
-  margin-left: auto;
-  margin-right: 35px;
+  margin-left: 25px;
   padding: 13px;
-  max-width: 420px;
+  padding-left: 20px;
+  max-width: 700px;
   background: hsl(0, 0%, 96%, 0.2);
   box-shadow: 8px 10px;
 }
@@ -61,6 +60,21 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
+
+li {
+  list-style: none;
+}
+
+.pet-box {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 3px;
+  box-shadow: 4px 5px;
+  background: hsl(0, 0%, 96%, 0.2);
+
+
+}
+
 
 .btn {
   display: inline-block;

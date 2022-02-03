@@ -1,6 +1,6 @@
 import Cat from "./Cat";
 
-const Pets = ({pets, onClick, deleteEvent, onToggle}) => { 
+const Vaccines = ({pets, onClick, deleteEvent, onToggle}) => { 
   return (
     <div>
       {pets.map((pet) => (
@@ -10,4 +10,4 @@ const Pets = ({pets, onClick, deleteEvent, onToggle}) => {
   );
 };
 
-export default Pets;
+export default Vaccines;

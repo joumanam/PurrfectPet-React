@@ -1,4 +1,4 @@
-import Pets from "../components/Pets";
+import Vaccines from "../components/Vaccines";
 import Header from "../components/Header";
 import { useState } from "react";
 import "../components/Modal.css";
@@ -90,7 +90,7 @@ const VaccineListScreen = (props) => {
       />
       {isAddClicked && <AddVaccine onAddVaccine={addVaccine} />}
       {vaccines.length > 0 ? (
-        <Pets
+        <Vaccines
           pets={vaccines}
           onClick={toggleModal}
           deleteEvent={deleteEvent}
