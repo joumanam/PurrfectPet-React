@@ -2,7 +2,7 @@ import React from "react";
 
 function MyPets() {
   const myPetsList = [
-    { id: 1, name: "Melodie", dob: "2015", gender: "female", species: "cat" },
+    { id: 1, name: "Melodie", dob: "2015", gender: "female", species: "hamster" },
     { id: 2, name: "Roxy", dob: "2013", gender: "female", species: "cat" },
     { id: 3, name: "Kiwi", dob: "2019", gender: "male", species: "dog" },
     { id: 4, name: "Coopy", dob: "2015", gender: "female", species: "fish" },
@@ -27,7 +27,7 @@ function MyPets() {
                 ? "🐤 "
                 : pet.species == 'fish' 
                 ? "🐟 "
-                : '🐾 '}
+                : "🐾 "}
               <span style={{ fontWeight: "bold" }}> Name:</span> {pet.name}
               <span style={{ fontWeight: "bold" }}> Species:</span>{" "}
               {pet.species}

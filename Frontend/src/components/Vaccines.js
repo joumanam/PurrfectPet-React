@@ -1,10 +1,10 @@
 import Cat from "./Cat";
 
-const Vaccines = ({pets, onClick, deleteEvent, onToggle}) => { 
+const Vaccines = ({vaccines, onClick, deleteEvent, onToggle}) => { 
   return (
     <div>
-      {pets.map((pet) => (
-        <Cat key={pet.id} vaccine={pet} onClick={onClick} deleteEvent={deleteEvent} onToggle={onToggle}/>
+      {vaccines.map((vaccine) => (
+        <Cat key={vaccine.id} vaccine={vaccine} onClick={onClick} deleteEvent={deleteEvent} onToggle={onToggle}/>
       ))}
     </div>
   );

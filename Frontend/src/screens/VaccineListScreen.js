@@ -91,7 +91,7 @@ const VaccineListScreen = (props) => {
       {isAddClicked && <AddVaccine onAddVaccine={addVaccine} />}
       {vaccines.length > 0 ? (
         <Vaccines
-          pets={vaccines}
+          vaccines={vaccines}
           onClick={toggleModal}
           deleteEvent={deleteEvent}
           onToggle={toggleReminder}

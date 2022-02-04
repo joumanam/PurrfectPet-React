@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaTrash, FaCheck } from "react-icons/fa";
 // import { UserContext } from "../UserContext";
-import Picker from "emoji-picker-react";
 import "../index.css";
 
 const Cat = ({ vaccine, onClick, deleteEvent, onToggle }) => {

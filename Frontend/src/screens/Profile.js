@@ -1,13 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import background from "../images/background.jpg";
 import { FaEdit, FaPlusSquare } from "react-icons/fa";
 import MyPets from "../components/MyPets";
 import Button from "../components/Button";
+import AddNewPet from "../components/AddNewPet";
 
 function Profile() {
   let navigate = useNavigate();
   // let { username } = useParams();
+  const [isAddClicked, setIsAddClicked] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const onClickAdd = () => {
+    setIsAddClicked(!isAddClicked)
+    console.log(isAddClicked)
+  }
+
   return (
     <div
       className="profile-background"
@@ -66,16 +75,20 @@ function Profile() {
                 margin="0px"
               />{" "}
               <Button
-                color="green"
-                text="Add ➕"
+                color={isAddClicked ? 'green' : 'red'}
+                text={isAddClicked ? "Add ➕" : "Cancel ✖️"}
                 padding="3px 10px"
                 margin="0px"
+                onClick={onClickAdd}
               />
             </span>
           </div>
+            <AddNewPet />
+
           <div>
             <MyPets />
           </div>
+          <div></div>
         </div>{" "}
         <br />
       </div>
